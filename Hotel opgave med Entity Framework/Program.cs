@@ -24,7 +24,7 @@ namespace Hotel_opgave_med_Entity_Framework
                     Console.WriteLine(item.ToString());
                 }
 
-                //Opgave2_2
+                //Opgave2_2 //
                 var GuestList = from g in db.Guests
                     select g;
                 //List alle informationer om alle kunderne
