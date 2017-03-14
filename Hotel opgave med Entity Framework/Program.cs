@@ -97,6 +97,29 @@ namespace Hotel_opgave_med_Entity_Framework
                 //db.Bookings.Add(nybook02);
                 //db.SaveChanges();
 
+                //Opgave 5
+                //var changedata = from gchange in db.Guests
+                //    where gchange.Guest_No == 30
+                //    select gchange;
+
+                //Guest test = changedata.FirstOrDefault();
+                //test.Address = "Elisagaardsvej 5";
+                //db.SaveChanges();
+
+                //Console.WriteLine(test.Name);
+                //db.SaveChanges();
+
+                var changehotel = from h5 in db.Hotels
+                    where h5.Name == "Prindsen"
+                    select h5;
+
+                Hotel test2 = changehotel.FirstOrDefault();
+                test2.Name = "Roskilde First Hotel";
+                db.SaveChanges();
+                Console.WriteLine(test2.Name);
+
+
+
 
 
 
